@@ -116,9 +116,8 @@
 
 /* Loading spinner */
 .loading-spinner {
-  @apply animate-spin w-10 h-10 sm:w-12 sm:h-12 border-4 border-blue-400/20 border-t-blue-300 rounded-full mx-auto mb-4;
+  @apply animate-spin w-10 h-10 sm:w-12 sm:h-12 border-4 border-white border-t-transparent rounded-full mx-auto mb-4;
 }
-
 /* File info card */
 .file-info-card {
   @apply bg-gradient-to-r from-[#14151F] to-[#0E0F17] rounded-3xl p-6 border border-[#5B6CFF]/25 backdrop-blur-sm;
