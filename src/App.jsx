@@ -31,7 +31,7 @@ function App() {
 
   const analyzeResume = async (text) => {
     const prompt = constants.ANALYZE_RESUME_PROMPT.replace("{{DOCUMENT_TEXT}}", text);
-    const resp = await fetch("http://localhost:8787/analyze", {
+    const resp = await fetch("/api/analyze", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
