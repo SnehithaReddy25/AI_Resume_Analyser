@@ -172,7 +172,7 @@ function App() {
                   <div className="icon-container-xl bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border-blue-500/30">
                     <span className="text-3xl">📄</span>
                   </div>
-                  <div>
+                  <div className="px-1.5">
                     <h3 className="text-xl font-bold text-violet-400 mb-1"> Analysis Completed</h3>
                     <p className="text-slate-300 text-sm break-all"> {uploadedFile.name}</p>
                   </div>
