@@ -119,7 +119,7 @@ function App() {
         {/* Job Description input & Analyze button */}
         {uploadedFile && !analysis && (
           <div className="mb-6 max-w-3xl mx-auto">
-            <label className="text-slate-300 block mb-2 font-medium">Paste Job Description (Optional)</label>
+            <label className="text-slate-300 block mb-2 font-medium">Enter Job Description (Optional)</label>
             <textarea
               className="w-full p-3 rounded-lg bg-slate-800 text-white text-sm border border-slate-700 focus:outline-none focus:ring-2 focus:ring-violet-500"
               rows="6"
