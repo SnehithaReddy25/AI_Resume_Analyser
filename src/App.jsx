@@ -88,7 +88,7 @@ function App() {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light bg-gradient-to-r from-[#B8A9FF] via-[#9C8CFF] to-[#7A78FF] bg-clip-text text-transparent mb-2">
             RESUME ANALYZER
           </h1>
-          <p className="text-slate-300 text-sm sm:text-base">Upload your resume and get instant AI feedback</p>
+          <p className="text-slate-300 text-sm sm:text-base">Upload your resume and get AI feedback</p>
         </div>
 
         {/* Upload Resume */}
@@ -97,7 +97,7 @@ function App() {
             <div className="upload-zone">
               <div className="text-4xl sm:text-5xl lg:text-6xl mb-4">📄</div>
               <h3 className="text-xl sm:text-2xl text-slate-200 mb-2">Upload Your Resume</h3>
-              <p className="text-slate-400 mb-4 sm:mb-6 text-sm sm:text-base">PDF FILES ONLY and get feedback</p>
+              <p className="text-slate-400 mb-4 sm:mb-6 text-sm sm:text-base">PDF FILES ONLY </p>
               <input
                 type="file"
                 accept=".pdf"
@@ -123,7 +123,7 @@ function App() {
             <textarea
               className="w-full p-3 rounded-lg bg-slate-800 text-white text-sm border border-slate-700 focus:outline-none focus:ring-2 focus:ring-violet-500"
               rows="6"
-              placeholder="Enter the job description here to calculate ATS match score..."
+              placeholder="Enter the job description here to calculate ATS score..."
               value={jobDescription}
               onChange={(e) => setJobDescription(e.target.value)}
             ></textarea>
@@ -173,8 +173,8 @@ function App() {
                     <span className="text-3xl">📄</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-violet-400 mb-1">Analysis Completed</h3>
-                    <p className="text-slate-300 text-sm break-all">{uploadedFile.name}</p>
+                    <h3 className="text-xl font-bold text-violet-400 mb-1"> Analysis Completed</h3>
+                    <p className="text-slate-300 text-sm break-all"> {uploadedFile.name}</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
@@ -323,11 +323,11 @@ function App() {
               </div>
             </div>
 
-             {/* ATS Match Score */}
+             {/* ATS Score */}
             {analysis.atsScore !== undefined && (
               <div className="score-card mt-6">
                 <div className="text-center mb-4">
-                  <h2 className="text-2xl sm:text-3xl font-bold text-white">ATS Match Score</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-white">ATS Score</h2>
                   <p className="text-4xl font-extrabold text-blue-300 mt-2">{analysis.atsScore}/100</p>
                 </div>
                 <div className="mt-4">
