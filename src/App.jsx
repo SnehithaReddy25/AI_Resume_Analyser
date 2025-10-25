@@ -123,7 +123,7 @@ function App() {
             <textarea
               className="w-full p-3 rounded-lg bg-slate-800 text-white text-sm border border-slate-700 focus:outline-none focus:ring-2 focus:ring-violet-500"
               rows="6"
-              placeholder="Paste the job description here to calculate ATS match score..."
+              placeholder="Enter the job description here to calculate ATS match score..."
               value={jobDescription}
               onChange={(e) => setJobDescription(e.target.value)}
             ></textarea>
